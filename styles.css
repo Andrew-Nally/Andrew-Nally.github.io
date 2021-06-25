@@ -240,23 +240,25 @@ h1.name{
     text-align:center;
   }
 .section-2 .img-wrapper img{
-  width:35vw;
-  height:50vh;
+  max-width:45vw;
+  height:85vh;
   object-fit: cover;
   border-radius:25px;
   border:double 8px #fff;
   opacity:.7;
-  margin-left:30%;
+  margin-left:0%;
+  padding:2%;
 }
 
 .section-2 .about-text{
   display:flex;
   flex-direction: column;
-  width:70vw;
-  font-size:2.25rem;
-  padding:3%;
-  text-align:left;
-  margin-left:14%;
+  width:40vw;
+  height:100%;
+  font-size:1.8rem;
+  padding:1%;
+  text-align:CENTER;
+  margin-left:6%;
 }
 
 /* slideshow */
@@ -532,28 +534,41 @@ li img{
   /* End of Section 3 */
   
   /* Section 4 */
-  .section-4 {
-    width: 100%;
-    height: 100vh;
-    background-color: #333;
-    display: flex;
+    
+    .section-4 {
+      background: #b6da8c;
+      overflow: hidden;
+      display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding:5%;
-    margin-top:3%;
-  }
+    }
+    
+    .section-4:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 70%;
+      height: 100%;
+      background: #005370;
+      -webkit-transform-origin: 0% 0;
+      -ms-transform-origin: 0% 0;
+      transform-origin: 1% 0;
+      -webkit-transform: skewX(-60deg);
+      -ms-transform: skewX(-60deg);
+      transform: skewX(-60deg);
+      z-index: -1000;
+    }
+  
   
   .section-4-heading {
     color: #fff;
     box-shadow: none;
     border-color: #333;
-    margin-bottom: 1rem;
   }
   
   .contact-form {
     width: 90rem;
-    height:100vh;
+    height:50vh;
     flex-direction: column;
   }
   
@@ -567,9 +582,12 @@ li img{
     border: 0.2rem solid #aaa;
     color: #555;
   }
+  .contact-form input{
+        height:5rem;
+  }
   
   .contact-form textarea {
-    height: 10rem;
+    height: 12rem;
     max-height: 15rem;
     max-width: 100%;
   }
