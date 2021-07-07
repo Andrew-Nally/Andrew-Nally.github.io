@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+  html, body{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    margin:0;
+    overflow-x: hidden;
+    background-color:#000;
+    height:100vh;
+    width:100vw;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-Y: hidden;
+  }
+  .intro{
+    font-size:3.5rem;
+    letter-spacing: 5px;
+    text-align:left;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row ;
+    color:#fff;
+    position: absolute;
+    width:100%;
+    opacity:0;
+  }
+  .name {
+    font-size:8rem;
+    color: #000;
+    background: rgb(103, 244, 3);
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    width:100%;
+    position:absolute;
+   text-transform: uppercase;
+   display:flex;
+    bottom:35%;
+    line-height:17rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    opacity:0;
+    animation: header 1s .5s forwards;
+    font-family:'Archivo Black', sans-serif;
+    padding-top:0%;
+  }
+
+  .section-1-btn {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #333;
+    border: 0.3rem solid #333;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+  /* End of Section 1 */
+  
+  @keyframes header{
+    0%{
+      opacity:0;
+      background-color:#000;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+  
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    height: 1.9rem;
+    position: absolute;
+    z-index: 300;
+    bottom:55%;
+    display:flex;
+    opacity: 0;
+    flex-direction: row;
+    animation:header 2s 5s forwards; 
+    font-family:'Roboto',san-serif;
+    
+  }
+
+  .sticky {
+    position: fixed;
+    top: 10%;
+  }
+
+  .navbar-link {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 3rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.2s;
+  }
+
+  .change.navbar-link {
+    color: #fff;
+  }
+
+  .navbar-link:hover {
+    color: #fff;
+  }
+
+  .navbar-link::before {
+    content: "";
+    width: 0;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    right: -15%;
+    bottom: -0.3rem;
+    transition: width 0.2s;
+  }
+
+  .change.navbar-link::before {
+    width: 130%;
+  }
+
+  .navbar-link:hover::before {
+    width: 130%;
+  }
+  /* End of Navbar */
+
+
+ .contact{
+  position:absolute;
+  border:solid #fff 5px;
+  bottom:-100%;
+  margin-top:50%;
+}
+.fa-envelope{
+ font-size:5rem;
+ background:chartreuse;
+ padding:100%;
+ margin:0 auto;
+ border:2px dashed white;
+}
+
+.open-button {
+  background-color: rgb(14, 14, 14);
+  color: rgb(20, 244, 8);
+  padding: 14px 20px;
+  border: 2PX dashed #fff;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom:0%;
+  right: 2%;
+  width: 90px;
+  border-radius:50%;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+ z-index: 9;
+}
+
+.form-container {
+  max-width: 650px;
+  font-size:1rem;
+ color:#fff;
+  background: #000000;
+  display: flex;
+}
+.form-container input, .form-container textarea{
+  font-size:2.5rem;
+  border-radius:25px;
+  z-index:10000;
+  padding:10px;
+  margin:15px;
+
+}
+
+.form-container input[type=text]:focus, .form-container input[type=email]:focus, .form-container textarea:focus{ 
+  background-color: rgb(0, 0, 0);
+  color:#fff;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #000332;
+  color: rgb(97, 240, 9);
+  border: 2px dashed #fff;
+  cursor: pointer;
+  width:50%;
+  font-size:2rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+  border-radius:50%;
+  height:10rem;
+  transform:translate(111 10%);
+  margin:2%;
+  display:inline;
+  
+}
+
+.form-container .cancel {
+  background-color: #000;
+  color:rgb(5, 255, 38);
+  width:50%;
+  CURSOR:POINTER;
+  height:10rem;
+  text-transform: uppercase;
+  font-size:2rem;
+  border-radius:50%;
+  transform:translate(-122%,120%);
+} 
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+  
+/* @media only screen and (min-width: 600px) {   */
