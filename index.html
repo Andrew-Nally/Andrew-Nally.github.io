@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto&display=swap" rel="stylesheet"><body>
+    <div class="container">
+        <!--section 1-->
+        <section class="section-1 center" id="section-1">
+            <h1 class="section-1-heading">
+                Web Developer
+            </h1>
+            <img src="images/professional-me2021.jpg" alt="Andrew Nally" class="person-img">
+            <h3 class="person-name">ANDREW NALLY</h3>
+            <a href= "./images/Portfolio-Resume.pdf" download class="section-1-btn">Resume<i class="fas fa-file-download"></i></a>
+        </section>
+
+        <!--Navbar-->
+        <nav class="navbar center">
+            <a href="#section-1" class="navbar-link">Home</a>
+            <a href="#section-2" class="navbar-link">About</a>
+            <a href="#section-3" class="navbar-link">Portfolio</a>
+            <a href="#section-4" class="navbar-link">Contact</a>
+        </nav>
+        <!--End Navbar-->
+        <!---Section 2-->
+        <section class="section-2"id="section-2">
+            <h1 class="section-2-heading section-heading">About Me</h1>
+            <div id="Slideshow">
+                <div id="Slideshow_Background"> 
+                    <div id="Slideshow_Container">
+                        <!-- Slide 1 of 6 -->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                            <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                        </div>
+                        <!-- Slide 3 of 6 -->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                            <div class="text">the popular programming language Python,</div>
+                        </div>
+                        <!-- Slide 4 of 6 -->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                            <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                        </div>
+                        <!-- Slide 5 of 6 -->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
+                            <div class="text">back end development, databases and SQL.</div>
+                        </div>
+                        <!-- Previous and next buttons -->
+                        <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br> <!-- Adds a space between the slideshow images and the dots -->
+    
+                    <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+                        <span class="dot" onclick="currentSlide(5)"></span> 
+                        <span class="dot" onclick="currentSlide(6)"></span> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="progress-bars-wrapper">
+                <div class="progress-bar">
+                    <p class="progress-text">
+                        HTML/CSS
+                        <span></span>%
+                    </p>
+                    <div class="progress-percent"></div>
+                </div>
+                <div class="progress-bar">
+                    <p class="progress-text">
+                        Javascript
+                        <span></span>%
+                    </p>
+                    <div class="progress-percent"></div>
+                </div>
+                <div class="progress-bar">
+                    <p class="progress-text">
+                        Python
+                        <span></span>%
+                    </p>
+                    <div class="progress-percent"></div>
+                </div>
+                <div class="progress-bar">
+                    <p class="progress-text">
+                        SQL
+                        <span></span>%
+                    </p>
+                    <div class="progress-percent"></div>
+                </div>
+                <div class="progress-bar">
+                    <p class="progress-text">
+                        React 
+                        <span></span>%
+                    </p>
+                    <div class="progress-percent"></div>
+                </div>
+                <div class="progress-bar">
+                    <p class="progress-text">
+                        C#/ASP.Net
+                        <span></span>%
+                    </p>
+                    <div class="progress-percent"></div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <i class="far fa-lightbulb"></i>
+                    <h2 class="service-heading">Creative</h2>
+                </div>
+                <div class="service">
+                    <i class="fas fa-cut"></i>
+                    <h2 class="service-heading">Problem Solving</h2>
+                </div>
+                <div class="service">
+                    <i class="fas fa-tachometer"></i>
+                    <h2 class="service-heading">Fast</h2>
+                </div>
+                <div class="service">
+                    <i class="fas fa-rocket"></i>
+                    <h2 class="service-heading">Dynamic</h2>
+                </div>
+            </div>
+        </section>
+
+
+
+       <!--End of-Section 2-->
+
+       <!--Section 3-->
+        <section class="section-3" id="secton-3">
+            <h1 class="section-3-heading section-heading"> My Projects</h1>
+            <div class="projects-wrapper center">
+                <div class="project 01">
+                    <div class="project-text">
+                        <h2 class="project-name">MTV's 2021 VMA Award Highlights</h2>
+                        <h4 class="project-technologies">HTML / CSS / JS</h4>
+                    </div>
+                    <img src="./images/vma.png" alt="" class="project-img">
+                    <a href="https://andrew-nally.github.io/VMA-one-page-website/" class="project-link" target="_blank">Go to website</a>
+                </div>
+                <div class="project 02">
+                    <div class="project-text">
+                        <h2 class="project-name">Fire Vs. Ice</h2>
+                        <h4 class="project-technologies">HTML / CSS / JS</h4>
+                    </div>
+                    <img src="./images/Screen Shot 2021-10-14 at 8.01.46 AM.png" alt="" class="project-img">
+                    <a href="https://andrew-nally.github.io/Fire_And_Ice_TTT/" class="project-link" target="_blank">Go to website</a>
+                </div>
+                <div class="project 03">
+                    <div class="project-text">
+                        <h2 class="project-name">Filmtopia!</h2>
+                        <h4 class="project-technologies">Bootstrap</h4>
+                    </div>
+                    <img src="./images/film.png" alt="" class="project-img">
+                    <a href="https://andrew-nally.github.io/FILMTOPIA/" class="project-link" target="_blank">Go to website</a>
+                </div>
+                <div class="project 04">
+                    <div class="project-text">
+                        <h2 class="project-name">Red Store:Fitness Wear</h2>
+                        <h4 class="project-technologies">HTML / CSS / JS</h4>
+                    </div>
+                    <img src="./images/red.png" alt="" class="project-img">
+                    <a href="https://andrew-nally.github.io/Ecommerce_Website/" class="project-link" target="_blank">Go to website</a>
+                </div>
+                <div class="project 05">
+                    <div class="project-text">
+                        <h2 class="project-name">Papa Pep's Pizzeria</h2>
+                        <h4 class="project-technologies">HTML / CSS / JS</h4>
+                    </div>
+                    <img src="./images/pizza.png" alt="" class="project-img">
+                    <a href="https://andrew-nally.github.io/Pizza_Menu/" class="project-link" target="_blank">Go to website</a>
+                </div>
+                
+        </section>
+
+       <!---END OF SECTION3-->
+       <!---Section 4-->
+
+       <section class="section-4"id="section-4">
+           <h1 class="section-heading section-4-heading">
+               Contact Me
+           </h1>
+           <form action="https://formspree.io/f/xeqvzeoj" method="POST" class="contact-form center">
+               <input type="text" placeholder="Name" name="name">
+               <input type="email" placeholder="Email" name="email">
+                <textarea placeholder="Message" name="message"></textarea>
+                <input type="submit" value="Submit" class="contact-form-btn" />
+           </form>
+       </section>
+
+       <!---End of section4-->
+       <!---section 5---->
+       <footer class="section-5  center" id="section-5">
+           <div class="social-media">
+               <a href="https://www.facebook.com/drewtyler259" class="social-media-link">
+                   <i class="fab fa-facebook-square"></i>
+               </a>
+                <a href="https://www.github.com/andrew-nally" class="social-media-link">
+                    <i class="fab fa-github-square"></i>
+               </a>
+               <a href="https://www.linkedin.com/in/andrewnally259" class="social-media-link">
+                    <i class="fab fa-linkedin"></i>
+           </a>
+
+               
+           </div>
+           <p class="copyright section-heading">Copyright &copy; DrTy Designs</p>
+       </footer>
+
+
+       <!----End of section 5-->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
